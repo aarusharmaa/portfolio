@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+
+</head>
+
+<!--NAV BAR--> 
+<body class="bg-[#fffffe]">
+
+    <nav class="fixed top-0 left-0 right-0 w-full h-[100px] shadow-lg bg-white flex justify-evenly items-center z-50">
+        <a href="#about" class="font-dynapuff font-thin text-xl text-gray-700 hover:text-blue-600 transition-colors">About Me</a>
+        <a href="#work" class="font-dynapuff font-thin text-xl text-gray-700 hover:text-blue-600 transition-colors">My Work</a>
+        <a href="#social" class="font-dynapuff font-thin text-xl text-gray-700 hover:text-blue-600 transition-colors">Social Media</a>
+        <a href="#contact" class="font-dynapuff font-thin text-xl text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+    </nav>
+
+<!--STICKERS--> 
+    <main class="min-h-screen flex flex-col items-center justify-center p-8 overflow-hidden">
+        <div id="aarushi-sticker-animation-section" class="relative flex flex-col items-center justify-center w-full max-w-4xl px-4 py-8 md:px-8 md:py-12 lg:px-12 lg:py-16">
+            <p class="font-dokdo text-7xl md:text-8xl lg:text-[10rem] text-pink-600 leading-none mb-2">Aarushi</p>
+            <p class="font-love-ya text-7xl md:text-8xl lg:text-[10rem] text-pink-400 leading-none">PORTFOLIO</p>
+            <img src="./assets/sticker1.JPG" alt="Computer icon" class="sticker sticker-1 rounded-full">
+            <img src="./assets/sticker2.JPG" alt="Programmer code sticker" class="sticker sticker-2 rounded-full">
+            <img src="./assets/sticker3.JPG" alt="Spiderman guitar sticker" class="sticker sticker-3 rounded-full">
+            <img src="./assets/sticker4.JPG" alt="Snoopy sticker" class="sticker sticker-4 rounded-full">
+            <img src="./assets/sticker5.JPG" alt="McLaren Club ticket sticker" class="sticker sticker-5 rounded-full">
+            <img src="./assets/sticker6.JPG" alt="Pixel art computer with heart" class="sticker sticker-6 rounded-full">
+        </div>
+<!--TAROTS--> 
+        <section id="tarot-section" class="relative flex items-center justify-center min-h-screen w-full py-20">
+            <div class="relative w-full max-w-5xl h-[500px] flex items-center justify-center">
+                <img src="./assets/I.jpg" alt="The Coder Tarot Card" class="tarot-card tarot-card-1">
+                <img src="./assets/II.jpg" alt="The Debugger Tarot Card" class="tarot-card tarot-card-2">
+                <img src="./assets/III.PNG" alt="Web Development Tarot Card" class="tarot-card tarot-card-3">
+                <img src="./assets/IV.PNG" alt="Full-Stack Starter Tarot Card" class="tarot-card tarot-card-4">
+            </div>
+        </section>
+
+<!--ABOUT ME--> 
+        <section id="about" class="flex scroll-mt-12 py-20 bg-[#fffffe] text-center">
+            <p  class="font-dokdo text-9xl text-red-500">About</p>
+            <p class="font-love-ya text-9xl text-red-300">ME!</p>
+        </section>
+
+<!-- Secret Envelope Section -->
+        <section id="secret-envelope" class="relative w-full py-12 flex flex-col items-center justify-center">
+            <p id="secret-text" class="font-dokdo text-5xl md:text-6xl text-pink-600 mb-10 ">Top secret. Do not open!</p>
+                <img id="envelope-img"  src="./assets/closed.PNG"  alt="Sealed envelope" 
+                 class="mx-auto w-60 rounded-xl shadow-pink-300 shadow-lg cursor-pointer transform scale-90 hover:scale-100 transition-all duration-500">
+
+<!-- Hidden Resume link -->
+             <div id="resume-container" class="opacity-0 mt-10 transition-opacity duration-700 mb-[100px]">
+                 <a href="./RESUME.pdf" target="_blank" class="text-2xl font-love-ya text-blue-700 underline hover:text-blue-900">📄 View Resume</a>
+             </div>
+        </section>
+
+<!--MY WORK--> 
+
+<div id="work" class="flex scroll-mt-12 py-20 bg-[#fffffe] text-center">
+    <p class="text-8xl font-love-ya text-red-500">𓇻 MY</p>
+    <p class="text-8xl font-love-ya text-red-500 mx-[50px]"> WORK 𓇻</p>
+</div>
+<section class="py-20 bg-[#fffffe] text-center">
+  <div class="flex flex-col md:flex-row justify-center items-center gap-10 px-6">
+    
+    <!-- Shield Flip Card -->
+    <div class="w-[450px]  h-[450px] flip-card -[400px]">
+      <div class="flip-inner">
+        <!-- Front -->
+        <div class="flip-front shadow-lg shadow-teal-400">
+          <h3 class="font-Nunito text-3xl text-pink-700 text-center font-bold">Shield: Emergency Response</h3>
+        </div>
+        <!-- Back -->
+        <div class="flip-back text-gray-800 leading-relaxed font-Nunito text-xl shadow-lg shadow-orange-300"
+             onclick="window.open('https://github.com/aarusharmaa/shield/blob/685c73f83ae8be6ce2bff47d93e1b6c224f394ac/README.md', '_blank')">
+          <strong>HTML, CSS, JavaScript, React</strong><br><br>
+          • Real-time alerts, navigation, communication.<br>
+          • Maps, weather, and SMS APIs.<br>
+          • Voice assist, multilingual, dark mode.<br><br>
+          <span class="underline text-blue-600">Click to view →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dustbin Flip Card -->
+    <div class="w-[450px] h-[450px] flip-card">
+      <div class="flip-inner">
+        <!-- Front -->
+        <div class="flip-front shadow-lg shadow-teal-400">
+          <h3 class="font-Nunito text-3xl text-pink-700 text-center font-bold">Smart Dustbin System</h3>
+        </div>
+        <!-- Back -->
+        <div class="flip-back text-gray-800 text-sm leading-relaxed font-Nunito text-xl shadow-lg shadow-orange-300"
+             onclick="window.open('https://drive.google.com/file/d/1pE-BGZ0ebvm_C8CCCdDhRbYZgPEM04TP/view', '_blank')">
+          <strong>C Programming | Health Tech</strong><br><br>
+          • Sensor-based touchless disposal.<br>
+          • Embedded logic in C (stdio, conio).<br>
+          • Real-time COVID-19 solution demo.<br><br>
+          <span class="underline text-blue-600">Click to view →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MUJ Night Market Flip Card -->
+    <div class="w-[450px] h-[450px] flip-card">
+      <div class="flip-inner ">
+        <!-- Front -->
+        <div class="flip-front shadow-lg shadow-teal-400">
+          <h3 class="font-Nunito text-3xl text-pink-700 text-center font-bold">MUJ Night Market</h3>
+        </div>
+        <!-- Back -->
+        <div class="flip-back text-gray-800 text-sm leading-relaxed font-Nunito text-xl shadow-lg shadow-orange-300"
+             onclick="window.open('https://drive.google.com/file/d/1YfbMsiagJhxFCvlRlRpyHSoZ_NB12xQ-/view', '_blank')">
+          <strong>Frontend Design | HTML, CSS</strong><br><br>
+          • Responsive layout with animations.<br>
+          • Inspired by campus culture.<br>
+          • Accessible and mobile-optimized.<br><br>
+          <span class="underline text-blue-600">Click to view →</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--LETS CONNECT--> 
+
+
+<!-- Social Media Section - Vertical Layout -->
+<section id="social" class="relative w-full py-24 bg-cover bg-center rounded-4xl shadow-lg shadow-purple-300" style="background-image: url('./assets/_.jpeg'); ">
+  <div class="max-w-xl mx-auto px-6 text-center ">
+    <div class="flex flex-col gap-[100PX]">
+        <div class="flex flex-col items-center relative">
+  <h2 class="font-dokdo text-8xl text-purple-300 mb-4 drop-shadow-lg mt-[120px]">Let's</h2>
+  <h2 class="font-love-ya text-8xl text-pink-600 mb-16 drop-shadow-lg">CONNECT! ☆</h2>
+</div>
+      
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/aarushi-sharma-552855305/" target="_blank"
+         class="group bg-white/40 backdrop-blur-lg border border-white/20 p-6 rounded-2xl shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-blue-400 hover:shadow-lg transform mt-[100px]">
+        <p class="font-dynapuff text-2xl text-blue-700">LinkedIn</p>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/aarusharmaa" target="_blank"
+         class="group bg-white/40 backdrop-blur-lg border border-white/20 p-6 rounded-2xl shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-gray-500 hover:shadow-lg transform">
+        <p class="font-dynapuff text-2xl text-gray-900">GitHub</p>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/sharma_ji_ki_choti_beti_?igsh=MXQ1MWlyZDZuOWNjNg%3D%3D&utm_source=qr" target="_blank"
+         class="group bg-white/40 backdrop-blur-lg border border-white/20 p-6 rounded-2xl shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-pink-400 hover:shadow-lg transform">
+        <p class="font-dynapuff text-2xl text-pink-600">Instagram</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- MYSKILLS -->
+   <div class="flex ">
+    <p class="font-love-ya text-7xl text-orange-400 mt-[150px]">MY</p>
+    <p class="font-love-ya text-7xl text-orange-400 mt-[200px] mx-[40px]">SKILLS</p>
+   </div>
+<section id="my-skills" class="py-20 px-6 text-center">
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-12 justify-items-center">
+    <!-- Skill Card Template -->
+    <div class="flex flex-col items-center hover:scale-150 duration-700 ">
+      <img src="./assets/js.jpg" alt="JavaScript Logo" class="w-[140px] h-[140px] mb-2 rounded-2xl mx-[150px] " />
+      
+    </div>
+
+    <div class="flex flex-col items-center hover:scale-150 duration-700">
+      <img src="./assets/html.jpg" alt="HTML Logo" class="w-[140px] h-[140px] mb-2 rounded-2xl" />
+    </div>
+
+    <div class="flex flex-col items-center hover:scale-150 duration-700">
+      <img src="./assets/css.jpg" alt="CSS Logo" class="w-[140px] h-[140px] mb-2 rounded-2xl"  />
+    </div>
+
+    <div class="flex flex-col items-center hover:scale-150 duration-700">
+      <img src="./assets/tailwind.jpg" alt="Tailwind Logo" class="w-[140px] h-[140px] mb-2 rounded-2xl" />
+    </div>
+
+    <div class="flex flex-col items-center hover:scale-150 duration-700">
+      <img src="./assets/c.jpg" alt="C Logo" class="w-[140px] h-[140px] mb-2 rounded-2xl" />
+    </div>
+
+    <div class="flex flex-col items-center hover:scale-150 duration-700">
+      <img src="./assets/python.jpg" alt="Python Logo" class="w-[140px] h-[140px] mb-2 rounded-2xl" />
+    </div>
+
+    <div class="flex flex-col items-center hover:scale-150 duration-700">
+      <img src="./assets/mysql.jpg" alt="MySQL Logo" class=" w-[140px] h-[140px] mb-2 rounded-2xl" />
+    </div>
+
+    <div class="flex flex-col items-center hover:scale-150 duration-700">
+      <img src="./assets/react.jpg" alt="React Logo" class="w-[140px] h-[140px] mb-2 rounded-2xl" />
+    </div>
+  </div>
+</section>
+
+<!-- CONNECT Section -->
+<section id="contact" class="flex flex-col md:flex-row items-center justify-center gap-10 bg-[#fffffe] px-10 py-20 rounded-3xl">
+
+  <!-- Snoopy Image -->
+  <div class="w-full md:w-1/2 flex justify-center">
+    <img src="./assets/Snoopy's Very First Computer.jpeg" alt="Snoopy at computer" class="w-[350px] md:w-[400px] hover:scale-105 transition-transform duration-500" />
+  </div>
+
+  <!-- Contact Form Right -->
+  <div class="w-full md:w-1/2 text-center md:text-left space-y-6">
+    <h2 class="text-5xl font-dokdo text-pink-500 drop-shadow-lg">HI! SEND ME A MESSAGE! ✧</h2>
+
+    <!-- Formspree Working Form -->
+    <form action="https://formspree.io/f/xyzpznkw" method="POST" onsubmit="alert('WOOHOO! YOUR MESSAGE IS SENT! 🥳');" class="space-y-4">
+      <!-- Name -->
+      <input type="text" name="name" placeholder="Your Name" required
+             class="w-full px-5 py-3 rounded-lg bg-white/70 border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400 transition-all duration-300 font-dynapuff text-lg">
+
+      <!-- Message -->
+      <textarea name="message" placeholder="The message you want to send" required rows="4"
+             class="w-full px-5 py-3 rounded-lg bg-white/70 border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400 transition-all duration-300 font-dynapuff text-lg"></textarea>
+
+      <!-- Send Button -->
+      <button type="submit"
+              class="px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white font-love-ya text-xl rounded-xl transition-transform duration-300 hover:scale-105">
+        SEND ✉️
+      </button>
+    </form>
+
+    <!-- Email Info -->
+    <p class="text-gray-600 font-dynapuff text-lg mt-6">
+      Or email me directly at: <br>
+      <a href="mailto:aarushitechs@gmail.com" class="underline text-blue-700 hover:text-blue-900">aarushitechs@gmail.com</a>
+    </p>
+  </div>
+</section>
+</main>
+
+    <script>
+        // JavaScript to animate the stickers when the 'Aarushi PORTFOLIO' section comes into view
+        document.addEventListener('DOMContentLoaded', () => {
+            const aarushiSection = document.getElementById('aarushi-sticker-animation-section');
+            const stickers = document.querySelectorAll('#aarushi-sticker-animation-section .sticker');
+
+            if (aarushiSection && stickers.length > 0) {
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.1
+                };
+
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            stickers.forEach(sticker => {
+                                sticker.classList.add('is-visible');
+                            });
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+
+                observer.observe(aarushiSection);
+            }
+
+            // NEW JAVASCRIPT: To animate the tarot cards when their section comes into view
+            const tarotSection = document.getElementById('tarot-section');
+            const tarotCards = document.querySelectorAll('#tarot-section .tarot-card');
+
+            if (tarotSection && tarotCards.length > 0) {
+                const tarotObserverOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.2 // Trigger when 20% of the tarot section is visible
+                };
+
+                const tarotObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            tarotCards.forEach(card => {
+                                card.classList.add('is-visible');
+                            });
+                            observer.unobserve(entry.target); // Stop observing once animated
+                        }
+                    });
+                }, tarotObserverOptions);
+
+                tarotObserver.observe(tarotSection);
+            }
+        });
+
+        // Envelope entrance animation when in view
+const envelopeSection = document.getElementById("secret-envelope");
+const envelopeImg = document.getElementById("envelope-img");
+const secretText = document.getElementById("secret-text");
+const resumeContainer = document.getElementById("resume-container");
+
+let opened = false;
+
+const envelopeObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      envelopeImg.classList.remove("opacity-0", "translate-y-10");
+      secretText.classList.remove("opacity-0", "translate-y-10");
+      envelopeImg.classList.add("opacity-100", "translate-y-0");
+      secretText.classList.add("opacity-100", "translate-y-0");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+envelopeObserver.observe(envelopeSection);
+
+// Click animation to open envelope
+envelopeImg.addEventListener("click", () => {
+  if (!opened) {
+    secretText.textContent = "SECRET BREACHED";
+    envelopeImg.src = "./assets/open.PNG";
+    resumeContainer.classList.remove("opacity-0");
+    resumeContainer.classList.add("opacity-100", "animate-bounce");
+    opened = true;
+  }
+});
+
+
+ 
+
+
+
+
+        
+
+    </script>
+</body>
+</html>
