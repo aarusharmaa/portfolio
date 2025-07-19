@@ -72,6 +72,71 @@
              </div>
         </section>
 
+
+
+  <!-- 🐾 Snoopy Tip Widget -->
+<div id="snoopyTip" class="fixed bottom-6 right-6 z-50 flex items-end gap-2 animate-bounce">
+  <!-- Snoopy -->
+  <img src="./assets/sticker4.JPG" alt="Snoopy" class="w-16 h-auto drop-shadow-lg rounded-2xl" />
+
+  <!-- Speech Bubble -->
+  <div id="snoopyBubble" class="bg-yellow-100 text-purple-900 font-dynapuff text-sm px-4 py-2 rounded-xl shadow-md border border-purple-300 max-w-[200px] hidden transition-all duration-300">
+    <!-- Random tip inserted here -->
+  </div>
+</div>
+
+
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noventino&display=swap" rel="stylesheet">
+
+<!-- Ask Me Anything Section -->
+<section class="bg-pink-100 py-20 px-6 font-[Noventino] rounded-3xl">
+  <h2 class="text-5xl text-center text-pink-700 mb-10 font-love-ya ">🧸 Ask Me Anything!</h2>
+
+  <!-- Button Row -->
+  <div class="flex flex-wrap justify-center gap-4 mb-12">
+    <button class="chat-btn bg-[#fffffe] hover:bg-yellow-400 text-purple-900 font-bold py-2 px-4 rounded-full shadow-md" data-answer="Hi! I'm Aarushi 💜 But friends call me Rushi or Aaru!">
+      Name?
+    </button>
+    <button class="chat-btn bg-[#fffffe] hover:bg-purple-400 text-purple-900 font-bold py-2 px-4 rounded-full shadow-md" data-answer="My birthday is 8th September 2006 🎂 (Same as Shubman Gill 🏏)">
+      Birthday?
+    </button>
+    <button class="chat-btn bg-[#fffffe] hover:bg-pink-400 text-purple-900 font-bold py-2 px-4 rounded-full shadow-md" data-answer="HTML, CSS, Tailwind, JavaScript, React... and ✨magic✨">
+      Tech Stack?
+    </button>
+    <button class="chat-btn bg-[#fffffe] hover:bg-blue-400 text-purple-900 font-bold py-2 px-4 rounded-full shadow-md" data-answer="Dream collab? Me + Snoopy + Lando Norris 🐶🏎️💜">
+      Dream Collab?
+    </button>
+    <button class="chat-btn bg-[#fffffe] hover:bg-green-400 text-purple-900 font-bold py-2 px-4 rounded-full shadow-md" data-answer="100% Ravenclaw 🦅 Logically magical.">
+     Hogwarts House?
+    </button>
+    <button class="chat-btn bg-[#fffffe] hover:bg-red-400 text-purple-900 font-bold py-2 px-4 rounded-full shadow-md" data-answer="Currently building an AI-based Study Buddy 🤖💡 to help people learn gently!">
+      Current Project?
+    </button>
+    <button class="chat-btn bg-[#fffffe] hover:bg-fuchsia-400 text-purple-900 font-bold py-2 px-4 rounded-full shadow-md" data-answer="My comfort shows? Brooklyn Nine-Nine & Modern Family 🎬🛋️">
+      Comfort Show?
+    </button>
+    <button class="chat-btn bg-[#fffffe] hover:bg-orange-400 text-purple-900 font-bold py-2 px-4 rounded-full shadow-md" data-answer="Hardest project? Definitely SHIELD – but I loved building it 💥🛡️">
+      Hardest Project?
+    </button>
+    <button class="chat-btn bg-[#fffffe] hover:bg-indigo-400 text-purple-900 font-bold py-2 px-4 rounded-full shadow-md" data-answer="Currently professionalizing React... and crying in between 😭💻">
+     Currently Learning?
+    </button>
+  </div>
+
+  <!-- Chat Box -->
+  <div class="bg-white max-w-5xl mx-auto rounded-2xl shadow-lg p-6 flex gap-4 items-start transition-all duration-300">
+    <img src="./assets/images.webp" alt="Snoopy" class="w-[140px] h-[130px] ">
+    <div id="chatMessage" class="bg-yellow-100 text-purple-900 text-lg px-6 py-4 rounded-xl font-[Noventino] transition-all duration-300 min-h-[80px] flex items-center">
+      Click any question above and I’ll spill the tea 🐾☕
+    </div>
+  </div>
+</section>
+
+
+
 <!--MY WORK--> 
 
 <div id="work" class="flex scroll-mt-12 py-20 bg-[#fffffe] text-center">
@@ -144,7 +209,7 @@
 
 
 <!-- Social Media Section - Vertical Layout -->
-<section id="social" class="relative w-full py-24 bg-cover bg-center rounded-3xl shadow-lg shadow-purple-300 min-h-[800px]" style="background-image: url('./assets/bg.jpeg'); ">
+<section id="social" class="relative w-full py-24 bg-cover bg-center rounded-4xl shadow-lg shadow-purple-300" style="background-image: url('./assets/_.jpeg'); ">
   <div class="max-w-xl mx-auto px-6 text-center ">
     <div class="flex flex-col gap-[100PX]">
         <div class="flex flex-col items-center relative">
@@ -254,7 +319,8 @@
     </p>
   </div>
 </section>
-      
+
+
 </main>
 
     <script>
@@ -347,7 +413,40 @@ envelopeImg.addEventListener("click", () => {
  
 
 
+  const tips = [
+    "🐶 Remember to take breaks!",
+    "🐶 Code with love, not just logic.",
+    "🐶 Tailwind > Bootstrap 😎",
+    "🐶 Rushi believes in magic AND markup!",
+    "🐶 Don’t forget to stretch and sip water 💧",
+    "🐶 Bugs are just confused code 🐛",
+    "🐶 Organize your files like you organize hackathons 💅",
+  ];
 
+  const bubble = document.getElementById("snoopyBubble");
+
+  function showRandomTip() {
+    const randomTip = tips[Math.floor(Math.random() * tips.length)];
+    bubble.textContent = randomTip;
+    bubble.classList.remove("hidden");
+  }
+
+  // Show first tip immediately
+  showRandomTip();
+
+  // Change every 5 seconds
+  setInterval(showRandomTip, 5000);
+
+
+  const buttons = document.querySelectorAll('.chat-btn');
+  const chatBox = document.getElementById('chatMessage');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const message = button.getAttribute('data-answer');
+      chatBox.textContent = message;
+    });
+  });
 
         
 
