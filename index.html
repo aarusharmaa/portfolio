@@ -24,6 +24,7 @@
 
 <!--NAV BAR--> 
 <body class="bg-[#fffffe]">
+    <audio id="welcomeSound" src="./assets/welcome.mp3" preload="auto"></audio>
 
     <nav class="fixed top-0 left-0 right-0 w-full h-[100px] shadow-lg bg-white flex justify-evenly items-center z-50">
         <a href="#about" class="font-dynapuff font-thin text-xl text-gray-700 hover:text-blue-600 transition-colors">About Me</a>
@@ -62,7 +63,7 @@
 
 <!-- Secret Envelope Section -->
         <section id="secret-envelope" class="relative w-full py-12 flex flex-col items-center justify-center">
-            <p id="secret-text" class="font-dokdo text-5xl md:text-6xl text-pink-600 mb-10 ">Top secret. Do not open!</p>
+            <p id="secret-text" class="font-dokdo text-5xl md:text-6xl text-pink-600 mb-10 opacity-0 translate-y-10">Top secret. Do not open!</p>
                 <img id="envelope-img"  src="./assets/closed.PNG"  alt="Sealed envelope" 
                  class="mx-auto w-60 rounded-xl shadow-pink-300 shadow-lg cursor-pointer transform scale-90 hover:scale-100 transition-all duration-500">
 
@@ -319,6 +320,7 @@
     </p>
   </div>
 </section>
+<button onclick="document.getElementById('welcomeSound').play()" class="fixed bottom-10 left-10 bg-pink-500 text-white px-4 py-2 rounded-lg z-[9999]">Play Welcome Sound</button>
 
 
 </main>
@@ -401,7 +403,7 @@ envelopeObserver.observe(envelopeSection);
 // Click animation to open envelope
 envelopeImg.addEventListener("click", () => {
   if (!opened) {
-    secretText.textContent = "SECRET BREACHED";
+    secretText.textContent = "!!SECRET BREACHED!!";
     envelopeImg.src = "./assets/open.PNG";
     resumeContainer.classList.remove("opacity-0");
     resumeContainer.classList.add("opacity-100", "animate-bounce");
